@@ -8,6 +8,10 @@ build/
 # Cache Directories
 .cache/
 
+# Webpack Specific Files
+webpack.config.js
+webpack.config.*.js
+webpack.cache/
 
 # Logs
 *.log
