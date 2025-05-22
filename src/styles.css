@@ -73,3 +73,52 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root{
+  --font-color: #333333;
+  --font-size: 20px;
+}
+
+nav *{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+nav .nav-item{
+  padding:0 20px;
+  font-size: var(--font-size);
+}
+
+.submenu{
+  display: none;
+  position:absolute;
+  background: #f8f8f8;
+  box-shadow: 3px 3px 7px -1px rgb(0 0 0 / 40%);
+  border-radius: 9px;
+}
+
+.submenu.show{
+  display:block;
+}
+
+.submenu .child-nav-item{
+  padding: 5px 10px;
+}
+
+.submenu.mega.show {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.submenu.mega {
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+}
