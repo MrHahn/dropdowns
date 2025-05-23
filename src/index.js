@@ -1,14 +1,17 @@
 import "./styles.css";
 
-let dropdowns = document.querySelectorAll('.has-child-menu');
+let dropdownParents = document.querySelectorAll('.has-child-menu');
 
-dropdowns.forEach((item) => {
+dropdownParents.forEach((item) => {
     let submenu = item.querySelector('.submenu');
     const nav = document.querySelector('nav');
     item.addEventListener('click', (event) => {
-        dropdowns.forEach((dropdown) => {
-            dropdown.querySelector('.submenu').classList.remove('show');
-        })
+        event.stopPropagation();
+        if(!event.target.classList.contains('child-link')){
+            dropdownParents.forEach((dropdown) => {
+                dropdown.querySelector('.submenu').classList.remove('show');
+            })
+        }
         submenu.classList.add('show');
     })
     document.addEventListener('click', (event) => {

@@ -112,6 +112,24 @@ nav .nav-item{
   padding: 5px 10px;
 }
 
+.submenu.grandchildren {
+  position: absolute;
+  left: 135px;
+  top: 0;
+}
+
+.submenu.grandchildren .grandchild-nav-item {
+  padding: 5px 10px;
+}
+
+.submenu.children .has-child-menu:hover .submenu.grandchildren {
+  display: block;
+}
+
+.nav-item.has-child-menu:hover .submenu.children {
+  display: block;
+}
+
 .submenu.mega.show {
   display: flex;
   justify-content: space-evenly;
@@ -121,4 +139,9 @@ nav .nav-item{
   width: 100%;
   margin: 0 auto;
   left: 0;
+}
+
+.nav-item.has-child-menu:hover .submenu.mega{
+  display:flex;
+  justify-content: space-evenly;
 }
