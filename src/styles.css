@@ -74,41 +74,41 @@ h6 {
   isolation: isolate;
 }
 
-:root{
+:root {
   --font-color: #333333;
   --font-size: 20px;
 }
 
-nav *{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+nav * {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  position:relative;
+  position: relative;
 }
 
-nav .nav-item{
-  padding:0 20px;
+nav .nav-item {
+  padding: 0 20px;
   font-size: var(--font-size);
 }
 
-.submenu{
+.submenu {
   display: none;
-  position:absolute;
+  position: absolute;
   background: #f8f8f8;
   box-shadow: 3px 3px 7px -1px rgb(0 0 0 / 40%);
   border-radius: 9px;
 }
 
-.submenu.show{
-  display:block;
+.submenu.show {
+  display: block;
 }
 
-.submenu .child-nav-item{
+.submenu .child-nav-item {
   padding: 5px 10px;
 }
 
@@ -141,7 +141,7 @@ nav .nav-item{
   left: 0;
 }
 
-.nav-item.has-child-menu:hover .submenu.mega{
-  display:flex;
+.nav-item.has-child-menu:hover .submenu.mega {
+  display: flex;
   justify-content: space-evenly;
 }

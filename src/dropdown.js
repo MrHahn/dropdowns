@@ -1,5 +1,3 @@
-export default class Dropdown{
-    constructor(){
-
-    }
+export default class Dropdown {
+  constructor() {}
 }
